@@ -3,6 +3,11 @@ utils for python <br>
 <br>
 自分が使っているpython用のutil。主に機械学習用。
 
+### requirements
+- numpy
+- matplotlib
+- pytorch>=3.2
+
 ## util内のファイル一覧 
 - holder.py : 数値のログをとるためのクラス。平均値を計算したり、グラフに書き出したりできる。
 - logger.py : loggerのセットアップ用関数
