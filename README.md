@@ -7,7 +7,7 @@ utils for python <br>
 - python>=3.2
 - numpy
 - matplotlib
-
+- pytorch
 
 ## util内のファイル一覧 
 - holder.py : 数値のログをとるためのクラス。平均値を計算したり、グラフに書き出したりできる。
