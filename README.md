@@ -7,4 +7,4 @@ utils for python <br>
 - holder.py : 数値のログをとるためのクラス。平均値を計算したり、グラフに書き出したりできる。
 - logger.py : loggerのセットアップ用関数
 - torch_util.py : pytorch用の関数群　(tensor2np, np2tensor)
-- util.py : ファイル操作系の関数群 (mkdir, txt読み込み, txt書き込み)
+- file_util.py : ファイル操作系の関数群 (mkdir, txt読み込み, txt書き込み, ファイル一覧の取得)
