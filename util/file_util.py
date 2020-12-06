@@ -1,12 +1,8 @@
-import os,shutil
+import os,shutil,random
 
 def mkdir(dir):
     os.makedirs(dir, exist_ok=True)
 
-#if remove_line_break:
-#   return ['a','b','c',...]
-#else:
-#   return ['a\n','b\n','c\n',...]
 def read_txt(file, remove_line_break=True, ignore_extention=False):
     if file[-4:]!=".txt" and not ignore_extention:
         raise ValueError("'file' should be a text file.")
@@ -16,14 +12,12 @@ def read_txt(file, remove_line_break=True, ignore_extention=False):
             lines = f.read().splitlines()
         else:
             lines = f.readlines()
-
+    #if remove_line_break:
+    #   return ['a','b','c',...]
+    #else:
+    #   return ['a\n','b\n','c\n',...]
     return lines
 
-#let lines=['a','b','c',...]
-#if insert_line_break:
-#   write 'a/n'+'b/n'+'c/n'+...
-#else:
-#   write 'abc...'
 def write_txt(file, lines, insert_line_break=True, ignore_extention=False):
     if file[-4:]!=".txt" and not ignore_extention:
         raise ValueError("'file' should be a text file.")
@@ -33,6 +27,11 @@ def write_txt(file, lines, insert_line_break=True, ignore_extention=False):
             f.write("\n".join(lines)) 
         else:
             f.writelines(lines)
+    #let lines=['a','b','c',...]
+    #if insert_line_break:
+    #   write 'a/n'+'b/n'+'c/n'+...
+    #else:
+    #   write 'abc...'
 
 def get_filelist(dir, extention=None, root=""):
     l=[]
