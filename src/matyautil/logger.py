@@ -1,6 +1,6 @@
 import logging
 import os, sys
-from .file_util import mkdir
+from matyautil.file_util import mkdir
 
 def setup_logger(name, save_dir="log", filename="log.txt"):
     logger = logging.getLogger(name)

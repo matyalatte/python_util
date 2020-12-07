@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from .file_util import mkdir, read_txt, write_txt
+from matyautil.file_util import mkdir, read_txt, write_txt
 
 def split_datalist(datalist, label=None, train_ratio=0.8):
     if type(datalist) is list:
@@ -11,8 +11,8 @@ def split_datalist(datalist, label=None, train_ratio=0.8):
     id_all   = np.random.choice(data_num, data_num, replace=False)
     id_train  = id_all[0:train_num]
     id_test = id_all[train_num:]
-    train_list = filelist[id_train]
-    test_list  = filelist[id_test]
+    train_list = datalist[id_train]
+    test_list  = datalist[id_test]
     
     if label is not None:
         if type(label) is list:

@@ -13,18 +13,6 @@ class Holder():
     def get(self):
         return self.data
 
-    def mean(self):
-        return np.mean(self.data)
-
-    def sum(self):
-        return np.sum(self.data)
-
-    def max(self):
-        return np.max(self.data)
-
-    def min(self):
-        return np.min(self.data)
-
     def save_as_txt(self, file):
         lines=map(str, self.data.tolist())
         with open(file, "w") as f:
