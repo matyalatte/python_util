@@ -3,7 +3,7 @@ utils for python <br>
 <br>
 自分が使っているpython用のutil。主に機械学習用。
 
-utilの保存、pytestの学習、circleciの学習のために作りました。
+utilの保存、pytestの学習、circleciの学習のために作成したレポジトリのため、このレポジトリの実用性は低め。
 
 ### requirements
 - python>=3.2
